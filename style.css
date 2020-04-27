@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: "Abel";
+    background-color: #5E6472;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav li a{
+    display: block;
+    float: right;
+    margin: 15px;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+    color: #000000
+}
+
+.nav li a:hover {
+    color: #FFA69E;
+}
+
+h1 {
+    text-align: center;
+    font-size: 80px;
+} 
+
+p {
+    border: 2px solid #000000;
+    margin: 10px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+#initials {
+    transition-property: transform, opacity;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+
+#name {
+    transition: opacity 2s linear 2s;
+}
+
+.fullname {
+    opacity: 0;
+}
+
+.hidden {
+    color: #FFA69E;
+    transform: translateX(-40px);
+    opacity: 0;
+}
+
+.active {
+    opacity: 1;
+}
+
+
+
+
+
+ul {
+    text-align: center;
+    padding: 0;
+    list-style-type: none;
+}
+
+.name li{
+    display: inline-block;
+    font-size: 80px;
+}
+
+
+#first-initial {
+    transition: transform 1.999s linear;
+} 
+
+
+#last-initial {
+    transition: transform 2s linear;
+}
+
+.first-rest, .last-rest {
+    transition: all 2s linear 2s;
+    max-width: 50%;
+}
+
+.hidden-text {
+    opacity: 0;
+    max-width: 0;
+}
+
+.slide-left1 {
+    transform: translateX(-2.3em);
+}
+
+.slide-left2 {
+    transform: translateX(-1.3em);
+}
+
+.slide-right {
+    transform: translateX(100px);
+}
