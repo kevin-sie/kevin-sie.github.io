@@ -1,20 +1,51 @@
 function myFunction() {
-    window.setTimeout(name, 1000)
+    window.setTimeout(nameChange, 500)
 }
 
-function nameReveal() {
-    document.getElementById("initials").className = "hidden";
-    document.getElementById("name").classList.toggle("active");
+var changed = false;
+
+function nameChange() {
+
+    if (window.scrollY > 50 && !changed) {
+        document.getElementById("initials").style.opacity = 0;
+        window.setTimeout(function() {
+            document.getElementById("initials").innerHTML = "KEVIN SIE";
+            document.getElementById("initials").style.opacity = 1;    
+        }, 350);
+        changed = true;
+    } 
+    if (window.scrollY <= 50 && changed) {
+        document.getElementById("initials").style.opacity = 0;
+        window.setTimeout(function() {
+            document.getElementById("initials").innerHTML = "KS";
+            document.getElementById("initials").style.opacity = 1;    
+        }, 350);
+        changed = false;
+    } 
+    
+    
 }
 
-
-function name() {
-    document.getElementById("first-initial").classList.toggle("slide-left1");
-    document.getElementById("last-initial").classList.toggle("slide-left2");
-    document.getElementById("first-rest").classList.toggle("hidden-text");
-    document.getElementById("last-rest").classList.toggle("hidden-text");
-    // document.getElementById("last-rest").classList.toggle("slide-right");
-}
+window.addEventListener("scroll", myFunction);
 
 
-window.addEventListener("load", myFunction);
+
+
+
+
+
+// function nameReveal() {
+//     document.getElementById("initials").className = "hidden";
+//     document.getElementById("name").classList.toggle("active");
+// }
+
+
+// function name() {
+//     document.getElementById("first-initial").classList.toggle("slide-left1");
+//     document.getElementById("last-initial").classList.toggle("slide-left2");
+//     document.getElementById("first-rest").classList.toggle("hidden-text");
+//     document.getElementById("last-rest").classList.toggle("hidden-text");
+//     // document.getElementById("last-rest").classList.toggle("slide-right");
+// }
+
+// window.addEventListener("load", myFunction);
