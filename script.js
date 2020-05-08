@@ -10,8 +10,9 @@ function nameChange() {
         document.getElementById("initials").style.opacity = 0;
         window.setTimeout(function() {
             document.getElementById("initials").innerHTML = "KEVIN SIE";
+            document.getElementById("initials").style.fontSize = 200;
             document.getElementById("initials").style.opacity = 1;    
-        }, 350);
+        }, 500);
         changed = true;
     } 
     if (window.scrollY <= 50 && changed) {
@@ -19,7 +20,7 @@ function nameChange() {
         window.setTimeout(function() {
             document.getElementById("initials").innerHTML = "KS";
             document.getElementById("initials").style.opacity = 1;    
-        }, 350);
+        }, 500);
         changed = false;
     } 
     

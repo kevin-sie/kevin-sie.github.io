@@ -106,14 +106,14 @@ ul {
 } */
 
 .name {
-    margin: 200px 0 200px 0;
+    margin: 200px 0 300px 0;
     text-align: center;
 }
 
 .name h2 {
     border: 2px solid black;
     display: inline;
-    padding: 15px;
+    padding: 15px 60px 15px 60px;
     font-size: 350px;
     letter-spacing: 140%;
 }
