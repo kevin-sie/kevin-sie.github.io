@@ -1,33 +1,49 @@
 function myFunction() {
-    window.setTimeout(nameChange, 500)
+    window.setTimeout(nameChange, 100)
 }
 
-var changed = false;
+var nameChanged = false;
+var navChanged = false;
 
 function nameChange() {
 
-    if (window.scrollY > 50 && !changed) {
+    if (window.scrollY > 50 && !nameChanged) {
         document.getElementById("initials").style.opacity = 0;
         window.setTimeout(function() {
-            document.getElementById("initials").innerHTML = "KEVIN SIE";
-            document.getElementById("initials").style.fontSize = 200;
-            document.getElementById("initials").style.opacity = 1;    
+            // document.getElementById("initials").innerHTML = "KEVIN SIE";
+            document.getElementById("initials").style.fontSize = "50px";
+            document.getElementById("initials").style.opacity = 1;  
         }, 500);
-        changed = true;
+        nameChanged = true;
     } 
-    if (window.scrollY <= 50 && changed) {
+    if (window.scrollY <= 50 && nameChanged) {
         document.getElementById("initials").style.opacity = 0;
         window.setTimeout(function() {
-            document.getElementById("initials").innerHTML = "KS";
+            // document.getElementById("initials").innerHTML = "KS";
+            document.getElementById("initials").style.fontSize = "350px";
             document.getElementById("initials").style.opacity = 1;    
         }, 500);
-        changed = false;
+        nameChanged = false;
     } 
+
+    // if (window.scrollY > 700 && !navChanged) {
+    //     window.setTimeout(function() { 
+    //         document.getElementById("nav").style.opacity = 1;  
+    //     }, 250);
+    //     navChanged = true;
+    // } 
+    // if (window.scrollY <= 700 && navChanged) {
+    //     window.setTimeout(function() {
+    //         document.getElementById("nav").style.opacity = 0;    
+    //     }, 250);
+    //     navChanged = false;
+    // } 
     
     
 }
 
-window.addEventListener("scroll", myFunction);
+window.addEventListener("scroll", nameChange);
+
 
 
 

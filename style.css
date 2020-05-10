@@ -1,125 +1,78 @@
+body, html {
+    /* height: 100%; */
+}
+
 body {
     margin: 0;
     font-family: "Abel";
-    background-color: #5E6472;
+    /* background-color: #5E6472; */
+    background-color: white;
+    color: black;
 }
 
-.nav ul {
+.parallax {
+    background-image: url('untitled.svg');
+    min-height: 200px;
+    /* height: 100%; */
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/* NAVIGATION MENU */
+#nav {
+    /* opacity: 0; */
+    transition: opacity 0.5s ease-in-out;
+    background-color: black;
+}
+
+#nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    
 }
 
-.nav li a{
+#nav li a{
     display: block;
     float: right;
     margin: 15px;
     font-size: 30px;
     text-decoration: none;
     text-align: center;
-    color: #000000
+    color: white;
+    
 }
 
-.nav li a:hover {
+#nav li a:hover {
     color: #FFA69E;
 }
 
-h1 {
-    text-align: center;
-    font-size: 80px;
-} 
-
-p {
-    border: 2px solid #000000;
-    margin: 10px;
-    padding: 5px;
-    font-size: 20px;
+/* NAME */
+.sticky {
+    position: sticky;
+    top: 25px;
 }
-
-ul {
-    text-align: center;
-    padding: 0;
-    list-style-type: none;
-}
-
-/* .name li{
-    text-align: center;
-    display: inline-block;
-    font-size: 80px;
-    border: 2px solid black;
-}
-
-
-#first-initial {
-    transition: transform 0.999s ease-out;
-} 
-
-
-#last-initial {
-    transition: transform 1s ease-out;
-}
-
-.first-rest, .last-rest {
-    transition: all 1s ease-in 2s;
-    max-width: 50%;
-}
-
-.hidden-text {
-    opacity: 0;
-    display: none;
-}
-
-.slide-left1 {
-    transform: translateX(-2.3em);
-}
-
-.slide-left2 {
-    transform: translateX(-1.3em);
-}
-
-.slide-right {
-    transform: translateX(100px);
-}
-
-
-
-.name #initials {
-    text-align: center;
-    font-size: 40px;
-    display: inline;
-}
-
-.name:hover #initials {
-    font-size: 40px;
-    display: none;
-}
-
-.name #fullname {
-    font-size: 40px;
-    display: none;
-}
-
-.name:hover #fullname {
-    font-size: 40px;
-    display: inline;
-} */
 
 .name {
-    margin: 200px 0 300px 0;
+    margin: 200px 0 200px 0;
     text-align: center;
+    /* line-height: 400px; */
 }
 
 .name h2 {
     border: 2px solid black;
     display: inline;
-    padding: 15px 60px 15px 60px;
+    /* padding: 15px 60px 15px 60px; */
     font-size: 350px;
-    letter-spacing: 140%;
+    /* min-height: 300px; */
 }
 
 #initials {
-    transition: opacity 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .fullname {
@@ -127,7 +80,7 @@ ul {
 }
 
 div p {
-    padding-top: 300px;
+    padding-top: 1500px;
 }
 
 
