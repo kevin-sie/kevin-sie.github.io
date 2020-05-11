@@ -1,5 +1,5 @@
 function myFunction() {
-    window.setTimeout(nameChange, 100)
+    window.setTimeout(newFunction, 1000)
 }
 
 var nameChanged = false;
@@ -42,8 +42,37 @@ function nameChange() {
     
 }
 
-window.addEventListener("scroll", nameChange);
+function newFunction() {
+    var name = document.getElementById("fn");
 
+    name.style.borderTop = "3px solid black";
+    name.style.borderBottom = "3px solid black";
+    name.style.borderLeft = "3px solid black"; 
+    name.style.borderRight = "3px solid black"; 
+
+    window.setTimeout(function() { 
+        
+
+        window.setTimeout(function() {
+            name.style.opacity = 0;
+
+            window.setTimeout(function() {
+                name.innerHTML = "KEVIN SIE";
+                name.style.opacity = 1;
+
+                window.setTimeout(function() {
+                    name.style.transform = "translateY(-40%)";
+                    name.style.fontSize = "50px";
+                    name.style.padding = "5px 15px 5px 15px";    
+                }, 1000); 
+            }, 1000);
+        }, 1000);
+    }, 1000);
+}
+
+
+// window.addEventListener("scroll", nameChange);
+window.addEventListener("load", myFunction);
 
 
 
