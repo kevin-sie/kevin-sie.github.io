@@ -92,9 +92,13 @@ div p {
     display: inline-block;
     font-size: 325px;
     padding: 15px 60px 15px 60px;
+    margin-left: -13%;
+    /* border: 3px solid black; */
 
-    top: 50vh;
-    left: 50vh;
+    /* top: 50vh;
+    left: 50vh; */
 
     transition: all 0.5s linear;
+
+    position: fixed;
 }

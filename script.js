@@ -57,13 +57,18 @@ function newFunction() {
             name.style.opacity = 0;
 
             window.setTimeout(function() {
+                name.style.marginLeft = "-37%";
+            }, 500);
+            window.setTimeout(function() {
+                
                 name.innerHTML = "KEVIN SIE";
                 name.style.opacity = 1;
 
                 window.setTimeout(function() {
-                    name.style.transform = "translateY(-40%)";
+                    name.style.transform = "translateY(-60%)";
                     name.style.fontSize = "50px";
                     name.style.padding = "5px 15px 5px 15px";    
+                    name.style.marginLeft = "-5%";
                 }, 1000); 
             }, 1000);
         }, 1000);
