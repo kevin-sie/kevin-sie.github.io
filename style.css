@@ -1,16 +1,10 @@
-html, body {
-    height: 100%;
-}
-
 body {
-    margin: 0;
     font-family: "Abel";
-    /* background-color: #5E6472; */
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
 }
 
-.parallax {
+/* .parallax {
     background-image: url('untitled.svg');
     min-height: 200px;
 
@@ -18,7 +12,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
-}
+} */
 
 /* NAVIGATION MENU */
 #nav {
@@ -53,37 +47,6 @@ body {
 }
 
 /* NAME */
-.sticky {
-    position: sticky;
-    top: 0;
-}
-
-.name {
-    margin: 200px 0 200px 0;
-    text-align: center;
-    /* line-height: 400px; */
-}
-
-.name h2 {
-    display: inline;
-    padding: 15px 60px 15px 60px;
-    font-size: 350px; /* figure out how to make the font size to dynamically change according to window width */
-}
-
-#initials {
-    /* transition: all 2s ease-in-out; */
-}
-
-.fullname {
-    opacity: 1;
-}
-
-div p {
-    padding-top: 1500px;
-}
-
-
-
 #fn-wrapper {
     text-align: center;
 }
@@ -93,12 +56,27 @@ div p {
     font-size: 325px;
     padding: 15px 60px 15px 60px;
     margin-left: -13%;
-    /* border: 3px solid black; */
-
-    /* top: 50vh;
-    left: 50vh; */
-
-    transition: all 0.5s linear;
-
+    border: 3px solid white;
     position: fixed;
+    transition: all 0.5s linear;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+
+img {
+    margin: 16px;
+    /* border-radius: 90%; */
+    width: 500px;
+    height: 500px;
+}
+
+p {
+    line-height: 140%;
+    letter-spacing: 1px;
+    font-size: 150%;
+    margin: 50px;
 }
