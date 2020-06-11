@@ -1,5 +1,7 @@
 function newFunction() {
     var name = document.getElementById("fn");
+    var about = document.getElementById("about");
+
     window.setTimeout(function() {
         name.style.opacity = 0;
 
@@ -14,9 +16,13 @@ function newFunction() {
             window.setTimeout(function() {
                 name.style.transform = "translateY(-50%)";
                 name.style.fontSize = "30px";
-                name.style.padding = "5px 15px 5px 15px";    
+                name.style.padding = "5px 12px 5px 15px";    
                 name.style.marginLeft = "-4%";
             }, 1000); 
+
+            window.setTimeout(function() {
+                about.style.opacity = 1;
+            }, 1500)
         }, 1000);
     }, 1000);
 }

@@ -14,7 +14,7 @@ body {
     background-size: 100%;
 } */
 
-/* NAVIGATION MENU */
+/* NAVIGATION MENU
 #nav {
     list-style-type: none;
     margin: 0;
@@ -26,8 +26,8 @@ body {
     top: 0;
     right: 0;
 
-    /* opacity: 0;
-    transition: opacity 0.5s ease-in-out; */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
 #nav li {
@@ -44,7 +44,7 @@ body {
 
 #nav li a:hover {
     color: #FFA69E;
-}
+} */
 
 /* NAME */
 #fn-wrapper {
@@ -59,24 +59,30 @@ body {
     border: 3px solid white;
     position: fixed;
     transition: all 0.5s linear;
+    letter-spacing: 3px;
 }
 
+/* ABOUT */
 #about {
     display: flex;
     justify-content: center;
-    padding: 100px;
+    padding: 250px;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
 }
 
-img {
+#propic {
     margin: 16px;
     /* border-radius: 90%; */
     width: 500px;
     height: 500px;
 }
 
-p {
+#desc {
     line-height: 140%;
     letter-spacing: 1px;
     font-size: 150%;
     margin: 50px;
 }
+
+/* PROJECTS */
